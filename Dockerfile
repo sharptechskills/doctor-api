@@ -30,5 +30,5 @@ COPY --chown=www-data:www-data . /var/www
 RUN composer install --optimize-autoloader --no-dev
 
 # Expose port 9000 and start php-fpm server
-EXPOSE 9000
+EXPOSE 3306
 CMD ["php-fpm"]
